@@ -20,10 +20,10 @@ export default {
           },
           swiperList:[{
               id:'0001',
-              imgUrl:'https://imgs.qunarzz.com/vs_ceph_vs_vacation_pm/e4fd6ba9-84ad-4b6d-a73a-15298e8c3fcd.jpg'
+              imgUrl:'http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg'
           }, {
               id:'0002',
-              imgUrl:'https://img1.qunarzz.com/qs/2001/d9/8844a335554e1c02.jpg'
+              imgUrl:'http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg'
           }]
       }
   }
@@ -39,4 +39,5 @@ export default {
  background:#eee
  .swiper-img
    width:100%
+
 </style>
