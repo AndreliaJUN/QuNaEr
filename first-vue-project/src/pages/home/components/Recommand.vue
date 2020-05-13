@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
 	<ul>
-	  <li class="item border-bottom" v-for="item of recommandList" :key="item.id">
+	  <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
 		    <img class="item-img" :src='item.imgUrl'/>		 
 		 <div class="item-info">
 		    <p class="item-title">{{item.title}}</p>
@@ -17,27 +17,9 @@
 <script>
 export default {
 	name:'HomeRecommand',
-  data() {
-	  return  {
-         recommandList:[{
-		id:'001',
-		imgUrl:'http://img1.qunarzz.com/sight/p0/1507/cc/19733fc0135062788140cbb48ae606a7.water.jpg_200x200_d9ebe2fd.jpg',
-		title:'北京野生动物园',
-		desc:'北京野生动物园'
-	},{
-		id:'002',
-		imgUrl:'http://img1.qunarzz.com/sight/p0/1507/cc/19733fc0135062788140cbb48ae606a7.water.jpg_200x200_d9ebe2fd.jpg',
-		title:'北京野生动物园',
-		desc:'北京野生动物园'
-	},{
-		id:'003',
-		imgUrl:'http://img1.qunarzz.com/sight/p0/1507/cc/19733fc0135062788140cbb48ae606a7.water.jpg_200x200_d9ebe2fd.jpg',
-		title:'北京野生动物园',
-		desc:'北京野生动物园'
-	}]
-	  }
-	
-  }
+	props:{
+		recommendList:Array
+	}
 }
 </script>
 
@@ -75,5 +57,4 @@ export default {
         padding: 0 .2rem
         border-radius: .06rem
         color: #fff
-
 </style>
